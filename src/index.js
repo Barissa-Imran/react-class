@@ -1,5 +1,9 @@
 import ReactDOM from "react-dom"
 import App from "./App"
-import indexCSS from "./index.css"
+
+/* info (photo, name, buttons)
+About
+Interests
+Footer(social icons) */
 
 ReactDOM.render(<App />, document.getElementById("root"))

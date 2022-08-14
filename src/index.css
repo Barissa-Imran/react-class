@@ -1,65 +1,75 @@
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: Inter, sans-serif;
-    background-color: #282D35;
+    background-color: #23252C;
+    height: 100vh;
 }
 
-.navbar {
-    display: flex;
+.card--name {
+    color: #FFF;
+    line-height: 0.4em;
+}
+.card--title {
+    color: #F3BF99;
+    font-weight: 400;
+    line-height: 0.4em;
+    margin: 0;
+}
+p {
+    color: #DCDCDC;
+}
+.card {
+    margin: 10px 20px;
+    border-radius: 6px;
+    background-color: #1A1B21;
+    width: 400px;
     align-items: center;
-    background-color: #21222A;
-    height: 90px;
-    padding: 30px 25px;
 }
-
-.nav--logo_text, .nav--title {
+.card--info {
+    text-align: center;
+}
+.card--image {
+    width: 100%;
+}
+.card--info > button {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+.card--info> button > img {
     margin: 0;
+    align-self: baseline;
 }
 
-.nav--logo_text {
-    margin-right: auto;
-    color: #61DAFB;
-    font-weight: 700;
-    font-size: 22px;
+.card--info > .card--linkedin {
+    background-color: #5093E2;
+    margin-left: 10px;
+}
+.card--about, .card--interests {
+    padding: 0 30px;
 }
 
-.nav--title {
-    color: #DEEBF8;
-    font-weight: 600;
+.card--about {
+    margin-top: 10px;
+}
+.about--title {
+    color: #f5f5f5;
+    line-height: 0.4em;
 }
 
-.nav--icon {
-    width: 40px;
-    margin-right: 7px;
+.interests--title {
+    color: #f5f5f5;
 }
 
-main {
-    padding: 57px 27px;
-    color: white;
-    background-image: url(./images/logo192.png);
-    background-repeat: no-repeat;
-    background-position: right 75%;
+footer {
+    margin-top: 50px;
+    padding: 10px;
+    text-align: center;
+    background-color: #161619;
 }
-.main--title {
-    margin: 0;
-    font-size: 39px;
-    letter-spacing: -0.05em;
-}
-
-.main--facts {
-    margin-top: 46px;
-    max-width: 400px;
-}
-.main--facts > li {
-    line-height: 19px;
-    padding-block: 10px;
-}
-
-.main--facts > li::marker {
-    color: #61DAFB;
-    font-size: 1.4rem;
+footer > img {
+    margin-left: 15px;
 }
