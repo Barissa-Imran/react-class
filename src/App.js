@@ -1,16 +1,33 @@
-import Info from "./components/Info";
-import About from "./components/About";
-import Interests from "./components/Interests";
-import Footer from "./components/Footer";
 import "./index.css"
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero"
+import Card from "./components/Card";
+import katie from "./images/katie-zaferes.png"
+import grid from "./images/photo-grid.png"
 
 export default function App() {
-  return (
-    <div className="card">
-      <Info />
-      <About />
-      <Interests />
-      <Footer />
-    </div>
-  );
+    // const date = new Date()
+    // const hours = date.getHours()
+    // let timeOfDay
+
+    // if (hours < 12) {
+    //     timeOfDay = "morning"
+    // } else if (hours >= 12 && hours < 17) {
+    //     timeOfDay = "afternoon"
+    // } else {
+    //     timeOfDay = "night"
+    // }
+
+
+    return (
+        <div>
+            {/* <h1>Good {timeOfDay}!</h1> */}
+            <Navbar />
+            <Hero />
+            <Card img={katie} name="Katie Zaferes" price="136" />
+            <Card img={grid} name="Julius Yego" price="100" />
+            <Card img={katie} name="imran dhidha" price="20" />
+            <Card img={grid} name="Barry jnr" price="70" />
+        </div>
+    );
 }

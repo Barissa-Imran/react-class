@@ -1,75 +1,65 @@
-
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #23252C;
-    height: 100vh;
+  margin: 0;
 }
 
-.card--name {
-    color: #FFF;
-    line-height: 0.4em;
+nav {
+  padding: 20px 36px;
+  box-shadow: 0px 0px 8px 0.5px rgba(0, 0, 0, 0.1);
 }
-.card--title {
-    color: #F3BF99;
-    font-weight: 400;
-    line-height: 0.4em;
-    margin: 0;
+
+.gray{
+    color: #918E9B;
+} 
+.nav--logo {
+  width: 90px;
+  max-width: 100px;
 }
-p {
-    color: #DCDCDC;
+
+section {
+  padding: 20px;
 }
+.hero {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero--photogrid {
+  max-width: 400px;
+  align-self: center;
+}
+
+.hero-header {
+  margin-bottom: 16px;
+}
+
+.hero--text {
+  margin-top: 0;
+  width: 300px;
+}
+
 .card {
-    margin: 10px 20px;
-    border-radius: 6px;
-    background-color: #1A1B21;
-    width: 400px;
-    align-items: center;
-}
-.card--info {
-    text-align: center;
+    width: 175px;
+    font-size: 12px;
 }
 .card--image {
     width: 100%;
+    border-radius: 9px;
 }
-.card--info > button {
-    border: none;
-    border-radius: 5px;
-    padding: 5px 15px;
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
-.card--info> button > img {
+
+.card--star {
+    height: 14px;
+}
+
+.card > p {
     margin: 0;
-    align-self: baseline;
-}
-
-.card--info > .card--linkedin {
-    background-color: #5093E2;
-    margin-left: 10px;
-}
-.card--about, .card--interests {
-    padding: 0 30px;
-}
-
-.card--about {
-    margin-top: 10px;
-}
-.about--title {
-    color: #f5f5f5;
-    line-height: 0.4em;
-}
-
-.interests--title {
-    color: #f5f5f5;
-}
-
-footer {
-    margin-top: 50px;
-    padding: 10px;
-    text-align: center;
-    background-color: #161619;
-}
-footer > img {
-    margin-left: 15px;
+    line-height: 1.4em;
 }
